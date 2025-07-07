@@ -6,7 +6,7 @@ import pyfiglet
 from pyrogram import filters
 from pyrogram.types import CallbackQuery, InlineKeyboardButton, InlineKeyboardMarkup
 
-from DanteMusic import app
+from ZeebMusic import app
 
 
 def figle(text):
