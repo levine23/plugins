@@ -4,7 +4,7 @@ import requests
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
-from DanteMusic import app
+from ZeebMusic import app
 
 
 @app.on_message(filters.command(["wall", "wallpaper"]))
