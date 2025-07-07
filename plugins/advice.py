@@ -2,7 +2,7 @@ from pyrogram import filters
 from TheApi import api as aapi
 
 from config import LOG_GROUP_ID
-from DanteMusic import api, app
+from ZeebMusic import api, app
 
 
 @app.on_message(filters.command("advice"))
