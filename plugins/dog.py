@@ -9,7 +9,7 @@ from pyrogram.types import (
 )
 
 from config import BANNED_USERS
-from DanteMusic import app
+from ZeebMusic import app
 
 close_keyboard = InlineKeyboardMarkup(
     [
