@@ -1,8 +1,9 @@
 from pyrogram import filters
-from TheApi import api as aapi
+from TheAPI import api
 
-from config import LOG_GROUP_ID
-from ZeebMusic import api, app
+from config import LOGGER_GROUP_ID
+from ZeebMusic import app
+from SafoneAPI import SafoneAPI
 
 
 @app.on_message(filters.command("advice"))
