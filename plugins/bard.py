@@ -5,11 +5,11 @@ from ZeebMusic import app
 from SafoneAPI import SafoneAPI
 
 
-@app.on_message(filters.command(["cerita"]))
-async def cerita(bot, message):
+@app.on_message(filters.command(["bard"]))
+async def bard(bot, message):
     if len(message.command) < 2 and not message.reply_to_message:
         await message.reply_text(
-            "Example:\n\n`/bard ceritakan padaku tentang tuan rama dan sita secara singkat `"
+            "ᴇxᴀᴍᴘʟᴇ:\n\n`/bard tell me about lord rama and sita in brief `"
         )
         return
 
@@ -19,7 +19,7 @@ async def cerita(bot, message):
         user_input = " ".join(message.command[1:])
 
     try:
-        Z = await api.bard(user_input)
+        Z = await SafoneAPI().bard(user_input)
         result = Z["candidates"][0]["content"]["parts"][0]["text"]
         await message.reply_text(result)
     except requests.exceptions.RequestException as e:
