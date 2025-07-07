@@ -2,7 +2,7 @@ from pyrogram import filters
 from pyrogram.errors import PeerIdInvalid
 from pyrogram.types import Message, User
 
-from DanteMusic import app
+from ZeebMusic import app
 
 
 def ReplyCheck(message: Message):
