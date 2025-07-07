@@ -1,5 +1,5 @@
 from pyrogram import filters
-from DanteMusic import app
+from ZeebMusic import app
 
 
 @app.on_message(filters.command("id"))
