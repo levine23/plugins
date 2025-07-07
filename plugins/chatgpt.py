@@ -3,7 +3,7 @@ from pyrogram import filters
 from pyrogram.enums import ChatAction
 from TheApi import api
 
-from DanteMusic import app
+from ZeebMusic import app
 
 
 @app.on_message(
