@@ -1,7 +1,8 @@
 import requests
 from pyrogram import filters
 
-from ZeebMusic import api, app
+from ZeebMusic import app
+from SafoneAPI import SafoneAPI
 
 
 @app.on_message(filters.command(["cerita"]))
