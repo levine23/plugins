@@ -18,7 +18,7 @@ from pyrogram.errors import (
 from pyrogram.file_id import FileId
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
-from DanteMusic import app
+from ZeebMusic import app
 from utils.error import capture_err
 
 BOT_USERNAME = app.username
