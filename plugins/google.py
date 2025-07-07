@@ -3,7 +3,7 @@ import logging
 from googlesearch import search
 from pyrogram import filters
 
-from ZeebMusic import api, app
+from ZeebMusic import app
 
 
 @app.on_message(filters.command(["google", "gle"]))
