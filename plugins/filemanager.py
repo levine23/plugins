@@ -8,8 +8,8 @@ from os.path import exists, isdir
 from pyrogram import filters
 from pyrogram.types import Message
 
-from DanteMusic import app
-from DanteMusic.misc import SUDOERS
+from ZeebMusic import app
+from ZeebMusic.misc import SUDOERS
 from utils.error import capture_err
 
 MAX_MESSAGE_SIZE_LIMIT = 4095
