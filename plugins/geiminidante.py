@@ -53,7 +53,7 @@ async def chat_with_api(model, prompt):
         except aiohttp.ClientError as e:
             return f"ᴇʀʀᴏʀ: ᴜɴᴀʙʟᴇ ᴛᴏ ᴄᴏɴɴᴇᴄᴛ ᴛᴏ ᴛʜᴇ ᴀᴘɪ - {str(e)}"
 
-from DanteMusic import app
+from ZeebMusic import app
 
 @app.on_message(filters.command("geminisearch", ["/"]))
 async def gptAi(client, message):
