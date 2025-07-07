@@ -1,4 +1,3 @@
-''
 from pyrogram import filters
 from TheAPI import api
 
@@ -32,4 +31,3 @@ __MODULE__ = "Device"
 __HELP__ = """<blockquote><b>
 /advice - Get random advice
 /astronomical - to get today's astronomical  fact</b></blockquote>"""
-''
