@@ -11,10 +11,10 @@ from pyrogram.types import (
     InlineKeyboardMarkup,
 )
 
-from DanteMusic import app
-from DanteMusic.misc import SUDOERS
+from ZeebMusic import app
+from ZeebMusic.misc import SUDOERS
 from .notes import extract_urls
-from DanteMusic.utils.database import is_gbanned_user
+from ZeebMusic.utils.database import is_gbanned_user
 
 from utils import (
     del_welcome,
@@ -23,9 +23,9 @@ from utils import (
 )
 
 from utils.error import capture_err
-from DanteMusic.utils.functions import check_format, extract_text_and_keyb
-from DanteMusic.utils.keyboard import ikb
-from DanteMusic.utils.permissions import adminsOnly
+from ZeebMusic.utils.functions import check_format, extract_text_and_keyb
+from ZeebMusic.utils.keyboard import ikb
+from ZeebMusic.utils.permissions import adminsOnly
 
 
 async def handle_new_member(member, chat):
