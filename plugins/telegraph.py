@@ -4,7 +4,7 @@ from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from telegraph import upload_file
 
-from DanteMusic import app
+from ZeebMusic import app
 from TheApi import api
 
 
