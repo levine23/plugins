@@ -1,7 +1,7 @@
 import requests
 from pyrogram import filters
 from pyrogram.enums import ChatAction
-from TheApi import api
+from TheAPI import api
 
 from ZeebMusic import app
 
