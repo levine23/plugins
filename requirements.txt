@@ -1,4 +1,3 @@
-googlesearch
 bing-image-urls
 gTTS
 googlesearch-python
