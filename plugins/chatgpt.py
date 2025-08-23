@@ -1,5 +1,3 @@
-'''
-
 import requests
 from pyrogram import filters
 from pyrogram.enums import ChatAction
@@ -35,10 +33,8 @@ async def chatgpt_chat(bot, message):
 
 
 __MODULE__ = "ChatGPT"
-__HELP__ = """<blockquote><b>
+__HELP__ = """<blockquote expandable><b>
 /advice - get random advice by bot
 /ai [query] - ask your question with chatgpt's ai
 /gemini [query] - ask your question with google's gemini ai
 /bard [query] -ask your question with google's bard ai.</b></blockquote>"""
-
-'''
