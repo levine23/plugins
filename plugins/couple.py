@@ -1,5 +1,3 @@
-'''
-
 from datetime import datetime, timedelta
 import pytz
 import os
@@ -152,5 +150,3 @@ Next couples will be selected on {tomorrow}!!**
             os.remove(cppic_path)
         except Exception as cleanup_error:
             print(f"Error during cleanup: {cleanup_error}")
-
-'''
