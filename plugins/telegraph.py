@@ -1,3 +1,5 @@
+'''
+
 import os
 
 from pyrogram import filters
@@ -89,3 +91,5 @@ you must reply to a media file for the upload to work.</b></blockquote>
 """
 
 __MODULE__ = "Link"
+
+'''
