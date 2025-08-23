@@ -9,6 +9,7 @@ SafoneAPI
 nekos.py
 telegraph
 uuid
+pytz
 git+https://github.com/Vooyage21/apix@main
 git+https://github.com/TheChampu/TheAPI
 git+https://github.com/TheChampu/ChampuAPI
