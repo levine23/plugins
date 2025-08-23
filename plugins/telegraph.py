@@ -5,7 +5,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from telegraph import upload_file
 
 from ZeebMusic import app
-from TheApi import api
+from TheAPI import api
 
 
 @app.on_message(filters.command(["tgm", "tgt", "telegraph", "tl"]))
