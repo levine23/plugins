@@ -2,7 +2,7 @@ from pyrogram import filters
 from pyrogram.errors import PeerIdInvalid
 from pyrogram.types import Message, User
 
-from ZeebMusic import app
+from damMusic import app
 
 
 def ReplyCheck(message: Message):
@@ -83,7 +83,7 @@ async def whois(client, message):
         ),
         disable_web_page_preview=True,
     )
-__HELP__ = """<blockquote><b>
+__HELP__ = """<blockquote expandable><b>
 **command:**
 
 • /whois - **check user information.**
