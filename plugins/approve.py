@@ -1,22 +1,12 @@
-#
-# Copyright (C) 2024 by TheTeamVivek@Github, < https://github.com/TheTeamVivek >.
-#
-# This file is part of < https://github.com/TheTeamVivek/DanteMusic > project,
-# and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/TheTeamVivek/DanteMusic/blob/master/LICENSE >
-#
-# All rights reserved.
-#
-
 from pyrogram import filters
 from pyrogram.enums import ChatMembersFilter
 from pyrogram.types import ChatJoinRequest
 from pyrogram.errors.exceptions.bad_request_400 import UserAlreadyParticipant
-from ZeebMusic import app
-from ZeebMusic.core.mongo import mongodb
-from ZeebMusic.misc import SUDOERS
-from ZeebMusic.utils.keyboard import ikb
-from ZeebMusic.utils.permissions import adminsOnly, member_permissions
+from damMusic import app
+from damMusic.core.mongo import mongodb
+from damMusic.misc import SUDOERS
+from damMusic.utils.keyboard import ikb
+from damMusic.utils.permissions import adminsOnly, member_permissions
 
 approvaldb = mongodb.autoapprove
 
@@ -53,13 +43,13 @@ async def approval_command(client, message):
         }
         keyboard = ikb(buttons, 1)
         await message.reply(
-            "**Autoapproval for this chat: Enabled.**", reply_markup=keyboard
+            "<blockquote>**Autoapproval for this chat: Enabled.**</blockquote>", reply_markup=keyboard
         )
     else:
         buttons = {"Turn on ": "approval_on"}
         keyboard = ikb(buttons, 1)
         await message.reply(
-            "**Autoapproval for this chat: Disabled.**", reply_markup=keyboard
+            "<blockquote>**Autoapproval for this chat: Disabled.**</blockquote>", reply_markup=keyboard
         )
 
 
@@ -206,7 +196,7 @@ async def manual(app, cb):
 
 
 __MODULE__ = "Approve"
-__HELP__ = """<blockquote><b>
+__HELP__ = """<blockquote expandable><b>
 command: /autoapprove
 
 This module helps to automatically accept chat ioin request send by a user through invitation link of your group
