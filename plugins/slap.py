@@ -1,4 +1,4 @@
-from ZeebMusic import app 
+from damMusic import app 
 from pyrogram import filters
 import nekos
 
