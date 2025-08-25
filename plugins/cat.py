@@ -9,7 +9,7 @@ from pyrogram.types import (
 )
 
 from config import BANNED_USERS
-from ZeebMusic import app
+from damMusic import app
 
 close_keyboard = InlineKeyboardMarkup(
     [
