@@ -1,7 +1,7 @@
 from pyrogram import enums, filters
 
-from ZeebMusic import app
-from ZeebMusic.utils.filter import admin_filter
+from damMusic import app
+from damMusic.utils.filter import admin_filter
 
 # ------------------------------------------------------------------------------- #
 
