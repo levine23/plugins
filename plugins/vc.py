@@ -12,8 +12,8 @@ from pyrogram.raw.functions.phone import (
 )
 from pyrogram.types import Message
 
-from ZeebMusic import app
-from ZeebMusic.utils.database import get_assistant
+from damMusic import app
+from damMusic.utils.database import get_assistant
 
 
 @app.on_message(filters.command(["vcstart", "onvc", "vcon", "startvc"]) & filters.group)
@@ -110,7 +110,7 @@ async def vcmembers(client, message: Message):
 
 
 __MODULE__ = "VcTool"
-__HELP__ = """<blockquote><b>
+__HELP__ = """<blockquote expandable><b>
 **COMMANDS:**
 
 • /vcstart - **starts a new voice chat.**
