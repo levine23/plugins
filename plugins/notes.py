@@ -5,8 +5,8 @@ from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 from config import BANNED_USERS
-from ZeebMusic import app
-from ZeebMusic.utils.database import (
+from damMusic import app
+from damMusic.utils.database import (
     delete_note,
     deleteall_notes,
     get_note,
@@ -16,14 +16,14 @@ from ZeebMusic.utils.database import (
     set_private_note,
 )
 from utils.error import capture_err
-from ZeebMusic.utils.functions import (
+from damMusic.utils.functions import (
     check_format,
     extract_text_and_keyb,
     get_data_and_name,
 )
 from ZeebMusic.utils.note_funcs import send_notes
-from ZeebMusic.utils.keyboard import ikb
-from ZeebMusic.utils.permissions import adminsOnly, member_permissions
+from damMusic.utils.keyboard import ikb
+from damMusic.utils.permissions import adminsOnly, member_permissions
 
 
 def extract_urls(reply_markup):
@@ -372,7 +372,7 @@ async def delete_all_cb(_, cb):
 
 
 __MODULE__ = "Notes"
-__HELP__ = """<blockquote><b>
+__HELP__ = """<blockquote expandable><b>
 **noteꜱ:**
 
 • `/save [NOTE_NAME] [CONTENT]`: Saves a note with the given name and content.
