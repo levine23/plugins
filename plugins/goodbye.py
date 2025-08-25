@@ -13,7 +13,6 @@ from pyrogram.types import (
 )
 from damMusic import app
 from damMusic.misc import SUDOERS
-from .notes import extract_urls
 from damMusic.utils.database import is_gbanned_user
 from utils import (
     del_goodbye,
