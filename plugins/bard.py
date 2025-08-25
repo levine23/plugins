@@ -1,7 +1,7 @@
 import requests
 from pyrogram import filters
 
-from ZeebMusic import app
+from damMusic import app
 from SafoneAPI import SafoneAPI
 
 
