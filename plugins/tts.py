@@ -3,7 +3,7 @@ import io
 from gtts import gTTS
 from pyrogram import filters
 
-from ZeebMusic import app
+from damMusic import app
 
 
 @app.on_message(filters.command("tts"))
@@ -23,7 +23,7 @@ async def text_to_speech(client, message):
     audio_file.name = "audio.mp3"
     await message.reply_audio(audio_file)
 
-__HELP__ = """<blockquote><b>
+__HELP__ = """<blockquote expandable><b>
 **text to speech bot command**
 
 use the `/tts` command to convert text into speech.
