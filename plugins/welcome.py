@@ -11,10 +11,10 @@ from pyrogram.types import (
     InlineKeyboardMarkup,
 )
 
-from ZeebMusic import app
-from ZeebMusic.misc import SUDOERS
+from damMusic import app
+from damMusic.misc import SUDOERS
 from .notes import extract_urls
-from ZeebMusic.utils.database import is_gbanned_user
+from damMusic.utils.database import is_gbanned_user
 
 from utils import (
     del_welcome,
@@ -23,9 +23,9 @@ from utils import (
 )
 
 from utils.error import capture_err
-from ZeebMusic.utils.functions import check_format, extract_text_and_keyb
-from ZeebMusic.utils.keyboard import ikb
-from ZeebMusic.utils.permissions import adminsOnly
+from damMusic.utils.functions import check_format, extract_text_and_keyb
+from damMusic.utils.keyboard import ikb
+from damMusic.utils.permissions import adminsOnly
 
 
 async def handle_new_member(member, chat):
@@ -211,7 +211,7 @@ async def get_welcome_func(_, message):
 
 
 __MODULE__ = "Welcome"
-__HELP__ = """<blockquote><b>
+__HELP__ = """<blockquote expandable><b>
 /setwelcome - Reply this to a message containing correct
 format for a welcome message, check end of this message.
 
