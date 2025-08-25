@@ -1,13 +1,3 @@
-#
-# Copyright (C) 2024 by TheTeamVivek@Github, < https://github.com/TheTeamVivek >.
-#
-# This file is part of < https://github.com/TheTeamVivek/DanteMusic > project,
-# and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/TheTeamVivek/DanteMusic/blob/master/LICENSE >
-#
-# All rights reserved.
-#
-
 import logging
 
 from pyrogram import filters
@@ -22,17 +12,17 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS, adminlist
 from strings import get_string
-from ZeebMusic import app
-from ZeebMusic.misc import SUDOERS
-from ZeebMusic.utils.database import (
+from damMusic import app
+from damMusic.misc import SUDOERS
+from damMusic.utils.database import (
     get_assistant,
     get_cmode,
     get_lang,
     get_playmode,
     get_playtype,
 )
-from ZeebMusic.utils.logger import play_logs
-from ZeebMusic.utils.stream.stream import stream
+from damMusic.utils.logger import play_logs
+from damMusic.utils.stream.stream import stream
 
 RADIO_STATION = {
     "Air Bilaspur": "http://air.pc.cdn.bitgravity.com/air/live/pbaudio110/playlist.m3u8",
