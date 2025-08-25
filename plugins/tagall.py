@@ -3,9 +3,9 @@ from pyrogram import filters
 from pyrogram.enums import ChatMembersFilter
 from pyrogram.errors import FloodWait
 
-from ZeebMusic import app
-from ZeebMusic.utils.database import get_assistant
-from ZeebMusic.utils.filter import admin_filter
+from damMusic import app
+from damMusic.utils.database import get_assistant
+from damMusic.utils.filter import admin_filter
 
 SPAM_CHATS = []
 
@@ -43,7 +43,7 @@ async def tag_all_users(_, message):
                         f"{replied.text}\n\n{usertxt}",
                         disable_web_page_preview=True,
                     )
-                    await asyncio.sleep(1)
+                    await asyncio.sleep(5)
                     usernum = 0
                     usertxt = ""
 
@@ -78,7 +78,7 @@ async def tag_all_users(_, message):
                         f"{text}\n{usertxt}",
                         disable_web_page_preview=True,
                     )
-                    await asyncio.sleep(2)
+                    await asyncio.sleep(5)
                     usernum = 0
                     usertxt = ""
             if usernum != 0:
@@ -126,7 +126,7 @@ async def tag_all_admins(_, message):
                         f"{replied.text}\n\n {usertxt}",
                         disable_web_page_preview=True,
                     )
-                    await asyncio.sleep(1)
+                    await asyncio.sleep(5)
                     usernum = 0
                     usertxt = ""
             if usernum != 0:
@@ -162,7 +162,7 @@ async def tag_all_admins(_, message):
                         f"{text}\n{usertxt}",
                         disable_web_page_preview=True,
                     )
-                    await asyncio.sleep(2)
+                    await asyncio.sleep(5)
                     usernum = 0
                     usertxt = ""
             if usernum != 0:
@@ -254,7 +254,7 @@ async def cancelcmd(_, message):
         await message.reply_text("**no process ongoing!**")
         return
 __MODULE__ = "Tagall"
-__HELP__ = """<blockquote><b>
+__HELP__ = """<blockquote expandable><b>
 
 @all or /all | /tagall or  @tagall | /mentionall or  @mentionall [text] or [reply to any message] to tag all user's in your group bt bot
 
