@@ -21,7 +21,7 @@ from damMusic.utils.functions import (
     extract_text_and_keyb,
     get_data_and_name,
 )
-from ZeebMusic.utils.note_funcs import send_notes
+from damMusic.utils.note_funcs import send_notes
 from damMusic.utils.keyboard import ikb
 from damMusic.utils.permissions import adminsOnly, member_permissions
 
