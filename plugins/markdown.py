@@ -2,8 +2,8 @@ from pyrogram.enums import ChatType, ParseMode
 from pyrogram.filters import command
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
-from ZeebMusic import app
-from ZeebMusic.utils.functions import MARKDOWN
+from damMusic import app
+from damMusic.utils.functions import MARKDOWN
 
 
 @app.on_message(command("markdownhelp"))
