@@ -3,8 +3,8 @@ import asyncio
 from pyrogram import enums, filters
 from pyrogram.enums import ChatMemberStatus
 from pyrogram.errors import FloodWait
-from ZeebMusic import app
-from ZeebMusic.utils.permissions import adminsOnly
+from damMusic import app
+from damMusic.utils.permissions import adminsOnly
 
 chatQueue = []
 
@@ -88,7 +88,7 @@ async def remove(client, message):
         await asyncio.sleep(e.value)
 
 __MODULE__ = "Zombies"
-__HELP__ = """<blockquote><b>
+__HELP__ = """<blockquote expandable><b>
 **commands:**
 - /zombies: remove deleted accounts from the group.
 
