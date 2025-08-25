@@ -4,7 +4,7 @@ import requests
 from bs4 import BeautifulSoup
 from pyrogram import filters
 
-from ZeebMusic import app
+from damMusic import app
 
 
 def get_video_title(video_id):
@@ -48,7 +48,7 @@ async def get_thumbnail_command(client, message):
         await a.edit(f"an errorr ocurred: {e}")
 
 
-__HELP__ = """<blockquote><b>
+__HELP__ = """<blockquote expandable><b>
 **youtube thumbnail bot commands**
 
 use these commands to get the thumbnail from a youtube video:
