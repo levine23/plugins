@@ -2,7 +2,7 @@ import random
 
 from pyrogram import filters
 
-from ZeebMusic import app
+from damMusic import app
 
 
 def get_random_message(love_percentage):
