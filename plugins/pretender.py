@@ -5,8 +5,8 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from config import MONGO_DB_URI
-from ZeebMusic import app
-from ZeebMusic.utils.filter import admin_filter
+from damMusic import app
+from damMusic.utils.filter import admin_filter
 
 mongo = MongoCli(MONGO_DB_URI).Rankings
 
