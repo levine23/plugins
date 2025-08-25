@@ -18,7 +18,7 @@ from pyrogram.errors import (
 from pyrogram.file_id import FileId
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
-from ZeebMusic import app
+from damMusic import app
 from utils.error import capture_err
 
 BOT_USERNAME = app.username
@@ -310,7 +310,7 @@ async def kang(client, message: Message):
 
 
 __MODULE__ = "Sticker"
-__HELP__ = """<blockquote><b>
+__HELP__ = """<blockquote expandable><b>
 **COMMANDS:**
 
 • /stickerid - **gets the file id of any replied sticker.**
