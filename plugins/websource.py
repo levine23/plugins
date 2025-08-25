@@ -3,7 +3,7 @@ from pyrogram import filters
 from requests.adapters import HTTPAdapter
 from requests.packages.urllib3.util.retry import Retry
 
-from ZeebMusic import app
+from damMusic import app
 
 
 def download_website(url):
@@ -52,7 +52,7 @@ def web_download(client, message):
 
 
 __MODULE__ = "Web"
-__HELP__ = """<blockquote><b>
+__HELP__ = """<blockquote expandable><b>
 **command:**
 
 • /webdl - **download website source code.**
