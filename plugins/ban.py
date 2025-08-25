@@ -16,23 +16,23 @@ from pyrogram.types import (
 from string import ascii_lowercase
 from typing import Dict, List, Union
 
-from ZeebMusic import app
-from ZeebMusic.misc import SUDOERS
-from ZeebMusic.core.mongo import mongodb
+from damMusic import app
+from damMusic.misc import SUDOERS
+from damMusic.core.mongo import mongodb
 from utils.error import capture_err
-from ZeebMusic.utils.keyboard import ikb
-from ZeebMusic.utils.database import save_filter
-from ZeebMusic.utils.functions import (
+from damMusic.utils.keyboard import ikb
+from damMusic.utils.database import save_filter
+from damMusic.utils.functions import (
     extract_user,
     extract_user_and_reason,
     time_converter,
 )
-from ZeebMusic.utils.permissions import adminsOnly, member_permissions
+from damMusic.utils.permissions import adminsOnly, member_permissions
 from config import adminlist, BANNED_USERS
 warnsdb = mongodb.warns
 
 __MODULE__ = "Ban"
-__HELP__ = """<blockquote><b>
+__HELP__ = """<blockquote expandable><b>
 /ban - Ban A User
 /sban - Delete all messages of user that sended in group and ban the user
 /tban - Ban A User For Specific Time
