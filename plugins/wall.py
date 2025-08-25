@@ -4,7 +4,7 @@ import requests
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
-from ZeebMusic import app
+from damMusic import app
 
 
 @app.on_message(filters.command(["wall", "wallpaper"]))
@@ -38,7 +38,7 @@ async def wall(_, message: Message):
         )
 
 __MODULE__ = "Wall"
-__HELP__ = """<blockquote><b>
+__HELP__ = """<blockquote expandable><b>
 **COMMANDS:**
 
 • /WALL - **download and send wallpaper.**
