@@ -1,5 +1,5 @@
 # dante
-from ZeebMusic.core.mongo import mongodb
+from damMusic.core.mongo import mongodb
 
 greetingsdb = mongodb.greetings
 
