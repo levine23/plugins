@@ -2,7 +2,7 @@ import requests
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-from ZeebMusic import app
+from damMusic import app
 
 
 def get_pypi_info(package_name):
@@ -49,7 +49,7 @@ async def pypi_info_command(client, message):
         )
 
 __MODULE__ = "Pypi"
-__HELP__ = """<blockquote>
+__HELP__ = """<blockquote expandable>
 <b>commands:
 • <code>/pypi <package_name></code>: Get details about a specified Python package from PyPI.
 
