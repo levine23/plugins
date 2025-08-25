@@ -1,7 +1,7 @@
 import asyncio
 import aiohttp
 from pyrogram import Client, filters
-from ZeebMusic import app
+from damMusic import app
 from pymongo import MongoClient
 from config import MONGO_DB_URI
 
