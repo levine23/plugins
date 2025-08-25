@@ -1,7 +1,7 @@
 from MukeshAPI import api
 from pyrogram import filters
 
-from ZeebMusic import app
+from damMusic import app
 
 
 @app.on_message(filters.command("hastag"))
