@@ -3,10 +3,10 @@ import os
 from pyrogram import enums, filters
 from pyrogram.types import Message
 
-from ZeebMusic import app
-from ZeebMusic.misc import SUDOERS
-from ZeebMusic.utils.database import is_gbanned_user
-from ZeebMusic.utils.sections import section
+from damMusic import app
+from damMusic.misc import SUDOERS
+from damMusic.utils.database import is_gbanned_user
+from damMusic.utils.sections import section
 
 
 async def userstatus(user_id):
@@ -140,7 +140,7 @@ async def chat_info_func(_, message: Message):
 
 
 __MODULE__ = "Info"
-__HELP__ = """<blockquote><b>
+__HELP__ = """<blockquote expandable><b>
 **user & chat information:**
 
 • `/info`: Get information about the user. Username, ID, and more.
