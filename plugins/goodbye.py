@@ -11,10 +11,10 @@ from pyrogram.types import (
     InlineKeyboardMarkup,
     Message,
 )
-from ZeebMusic import app
-from ZeebMusic.misc import SUDOERS
+from damMusic import app
+from damMusic.misc import SUDOERS
 from .notes import extract_urls
-from ZeebMusic.utils.database import is_gbanned_user
+from damMusic.utils.database import is_gbanned_user
 from utils import (
     del_goodbye,
     get_goodbye,
@@ -24,9 +24,9 @@ from utils import (
     set_greetings_off,
 )
 from utils.error import capture_err
-from ZeebMusic.utils.functions import check_format, extract_text_and_keyb
-from ZeebMusic.utils.keyboard import ikb
-from ZeebMusic.utils.permissions import adminsOnly
+from damMusic.utils.functions import check_format, extract_text_and_keyb
+from damMusic.utils.keyboard import ikb
+from damMusic.utils.permissions import adminsOnly
 
 
 async def handle_left_member(member, chat):
