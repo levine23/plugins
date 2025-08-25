@@ -8,18 +8,18 @@ from pyrogram.types import (
 )
 
 from typing import Dict, List, Union
-from ZeebMusic import app
-from ZeebMusic.core.mongo import mongodb
+from damMusic import app
+from damMusic.core.mongo import mongodb
 from utils.error import capture_err
-from ZeebMusic.utils.permissions import adminsOnly, member_permissions
-from ZeebMusic.utils.keyboard import ikb
+from damMusic.utils.permissions import adminsOnly, member_permissions
+from damMusic.utils.keyboard import ikb
 from .notes import extract_urls
-from ZeebMusic.utils.functions import (
+from damMusic.utils.functions import (
     check_format,
     extract_text_and_keyb,
     get_data_and_name,
 )
-from ZeebMusic.utils.database import (
+from damMusic.utils.database import (
     delete_filter,
     deleteall_filters,
     get_filter,
@@ -31,7 +31,7 @@ from config import BANNED_USERS
 
 
 __MODULE__ = "Filters"
-__HELP__ = """<blockquote><b>/filters To Get All The Filters In The Chat.
+__HELP__ = """<blockquote expandable><b>/filters To Get All The Filters In The Chat.
 /filter [FILTER_NAME] To Save A Filter(reply to a message).
 
 Supported filter types are Text, Animation, Photo, Document, Video, video notes, Audio, Voice.
@@ -46,6 +46,7 @@ You can use markdown or html to save text too.
 
 Checkout /markdownhelp to know more about formattings and other syntax.
 </b></blockquote>"""
+
 @app.on_message(filters.command("filter") & ~filters.private & ~BANNED_USERS)
 @adminsOnly("can_change_info")
 async def save_filters(_, message):
